@@ -1,0 +1,54 @@
+:root{
+    --first-color : #4070f4;
+    --header-height: 3rem;
+    --font-semi: 600;
+    --second-color: #0e2431;
+    --body-font : 'Poppins', sans-serif;
+    --big-fontsize : 2rem;
+    --h2-fontsize : 1.12rem;
+    --normal-fontsize: 0.938rem;
+
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    
+}
+@media screen and (min-width : 768px){
+    :root{
+        --big-fontsize : 3.5rem;
+        --h2-fontsize : 2rem;
+        --normal-fontsize: 1rem;
+    }
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-fontsize);
+    color: var(--second-color);
+}
+h1,h2,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
