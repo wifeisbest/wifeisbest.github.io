@@ -52,3 +52,108 @@ img{
 a{
     text-decoration: none;
 }
+/* class css */
+.section-title{
+    position: relative;
+    font-size: var(--h2-fontsize);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    height: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+.section{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+/* layout */
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+.l-header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+   
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146,161,176, 0.2);
+}
+/* nav */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-semi);
+}
+@media screen and (max-width : 768px){
+    .nav__menu{
+        position: fixed;
+        top: var(--header-height);
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: var(--second-color);
+        transition: 0.3s;
+    }
+}
+.nav__item{
+    margin-bottom: var(--mb-4);
+}
+.nav__link{
+    position: relative;
+    color: #fff;
+
+}
+.nav__link:hover{
+    position: relative;
+}
+.nav__link:hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+.nav__logo{
+    color: var(--second-color);
+
+}
+.nav__toggle{
+    color: var(--second-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+.show{
+    right: 0;
+}
