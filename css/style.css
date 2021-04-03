@@ -46,7 +46,7 @@ ul{
 }
 img{
     max-width: 100%;
-    /* display: block; */
+    display: block;
     height: auto;
 }
 a{
@@ -188,12 +188,14 @@ a{
     color: var(--first-color);
 }
 .home__img{
-    position: absolute;
-    right: 0;
-    bottom: 55px;
-    width: 295px;
-    border-radius: 33%;
-    overflow: hidden;
+  
+        position: absolute;
+  
+        bottom: 82px;
+        width: 237px;
+        border-radius: 33%;
+        overflow: hidden;
+        right: 10%;  
 }
 /* btn */
 .button{
