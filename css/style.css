@@ -167,7 +167,7 @@ a{
 }
 .home__title{
     font-size: var(--big-fontsize);
-    margin-bottom: var(--mb-5);
+    margin-bottom: var(--mb-2);
 
 }
 .home__title-color{
@@ -187,11 +187,9 @@ a{
 .home__social-icon:hover{
     color: var(--first-color);
 }
-.home__img{
-  
+.home__img{ 
         position: absolute;
-  
-        bottom: 82px;
+        bottom: 130px;
         width: 237px;
         border-radius: 33%;
         overflow: hidden;
